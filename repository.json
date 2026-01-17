@@ -10,14 +10,14 @@
   },
   "packages": {
     "url": "https://raw.githubusercontent.com/American-Embedded/American_Embedded_KiCad_Repository/main/packages.json",
-    "sha256": "05a5cb17482f50cf16df75686e384fd0b0110d2e723f904d4681569fc3b55ac8",
-    "update_timestamp": 1768671539,
-    "update_time_utc": "2026-01-17 17:38:59"
+    "sha256": "292b2e8ef2cc623d5446daaaab280b0c4c77dde0c67119294f5bf0093715f86c",
+    "update_timestamp": 1768676111,
+    "update_time_utc": "2026-01-17 18:55:11"
   },
   "resources": {
     "url": "https://raw.githubusercontent.com/American-Embedded/American_Embedded_KiCad_Repository/main/resources.zip",
-    "sha256": "16a7a84f8a093a70fc249e2c29f38b1b50b92ce9a0f4bc14a549bfe5e2d6463a",
-    "update_timestamp": 1768671539,
-    "update_time_utc": "2026-01-17 17:38:59"
+    "sha256": "cc204613d8b38a331c2cb222d98e30b6a09de2af9e19d36e825f9b43ae08bef3",
+    "update_timestamp": 1768676111,
+    "update_time_utc": "2026-01-17 18:55:11"
   }
 }

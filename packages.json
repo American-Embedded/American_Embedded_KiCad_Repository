@@ -2,6 +2,36 @@
   "packages": [
     {
       "$schema": "https://go.kicad.org/pcm/schemas/v1",
+      "name": "American Embedded Library",
+      "description": "Symbols and footprints for common components used in American Embedded designs",
+      "description_full": "A curated library of KiCad symbols and footprints maintained by American Embedded. Includes USB connectors, common ICs, and custom components with consistent styling and verified footprints generated from parametric YAML configurations.",
+      "identifier": "com.github.american-embedded.library",
+      "type": "library",
+      "author": {
+        "name": "American Embedded",
+        "contact": {
+          "email": "build@amemb.com",
+          "github": "https://github.com/American-Embedded"
+        }
+      },
+      "license": "CC-BY-4.0",
+      "resources": {
+        "homepage": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "status": "development",
+          "kicad_version": "8.0",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.library-0.1.0.zip",
+          "download_sha256": "8aaa915aafe255bde5f38d78b72d6ce0983e1c5c709e34ba59fd267a3a9c6999",
+          "download_size": 14290,
+          "install_size": 68941
+        }
+      ]
+    },
+    {
+      "$schema": "https://go.kicad.org/pcm/schemas/v1",
       "name": "American Embedded Dark Theme",
       "description": "Dark color theme for KiCad with American Embedded branding",
       "description_full": "A professionally designed dark color theme for KiCad featuring American Embedded's brand colors. Provides comfortable viewing for extended design sessions with carefully chosen contrast ratios for all editors including schematic, PCB, footprint editor, and 3D viewer.",
@@ -23,8 +53,8 @@
           "version": "1.0.0",
           "status": "stable",
           "kicad_version": "8.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v3/com.github.american-embedded.theme-dark-1.0.0.zip",
-          "download_sha256": "5a3bc705551623fddf42d6954c492c0860d9a6e673d03e667ee3f18359433b62",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-dark-1.0.0.zip",
+          "download_sha256": "a7641257347fd2b5e9dc56579194165074767abde2c4e6649d38cc25e1c34045",
           "download_size": 3793,
           "install_size": 15767
         }
@@ -53,8 +83,8 @@
           "version": "1.0.0",
           "status": "stable",
           "kicad_version": "8.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v3/com.github.american-embedded.theme-light-1.0.0.zip",
-          "download_sha256": "8bc634277416c65debdf1e5ff2e25ef8ef5a4e897dcd8d4686ba8fe86f677ab1",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-light-1.0.0.zip",
+          "download_sha256": "d82c487a01ff809d1b722a367769a82335c9191d9ccf86c6c89cc2ffd114fef9",
           "download_size": 3780,
           "install_size": 15494
         }
