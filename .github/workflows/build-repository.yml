@@ -1,0 +1,64 @@
+name: Build PCM Repository
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install jsonschema Pillow
+
+      - name: Build repository
+        run: |
+          python scripts/build_repository.py \
+            --repo-root . \
+            --output-dir output \
+            --base-url "https://github.com/${{ github.repository }}/releases/download/v${{ github.run_number }}" \
+            --metadata-url "https://raw.githubusercontent.com/${{ github.repository }}/main" \
+            --create-icons
+
+      - name: Create Release (package ZIPs only)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
+          body: |
+            Automated release from commit ${{ github.sha }}
+          files: |
+            output/releases/*.zip
+
+      - name: Commit updated metadata to repo
+        run: |
+          # Copy generated metadata files to repo root
+          cp output/repository.json .
+          cp output/packages.json .
+          cp output/resources.zip .
+
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Commit and push if there are changes
+          git add repository.json packages.json resources.zip
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update PCM repository metadata [skip ci]"
+            git push
+          fi

@@ -1,0 +1,26 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "American Embedded Light Theme",
+    "description": "Light color theme for KiCad with American Embedded branding",
+    "description_full": "A professionally designed light color theme for KiCad featuring American Embedded's brand colors. Ideal for well-lit environments with carefully chosen contrast ratios for all editors including schematic, PCB, footprint editor, and 3D viewer.",
+    "identifier": "com.github.american-embedded.theme-light",
+    "type": "colortheme",
+    "author": {
+        "name": "American Embedded",
+        "contact": {
+            "email": "build@amemb.com",
+            "github": "https://github.com/American-Embedded"
+        }
+    },
+    "license": "CC-BY-4.0",
+    "resources": {
+        "homepage": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository"
+    },
+    "versions": [
+        {
+            "version": "1.0.0",
+            "status": "stable",
+            "kicad_version": "8.0"
+        }
+    ]
+}

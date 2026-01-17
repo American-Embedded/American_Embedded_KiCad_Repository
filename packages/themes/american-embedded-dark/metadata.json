@@ -1,0 +1,26 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "American Embedded Dark Theme",
+    "description": "Dark color theme for KiCad with American Embedded branding",
+    "description_full": "A professionally designed dark color theme for KiCad featuring American Embedded's brand colors. Provides comfortable viewing for extended design sessions with carefully chosen contrast ratios for all editors including schematic, PCB, footprint editor, and 3D viewer.",
+    "identifier": "com.github.american-embedded.theme-dark",
+    "type": "colortheme",
+    "author": {
+        "name": "American Embedded",
+        "contact": {
+            "email": "build@amemb.com",
+            "github": "https://github.com/American-Embedded"
+        }
+    },
+    "license": "CC-BY-4.0",
+    "resources": {
+        "homepage": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository"
+    },
+    "versions": [
+        {
+            "version": "1.0.0",
+            "status": "stable",
+            "kicad_version": "8.0"
+        }
+    ]
+}
