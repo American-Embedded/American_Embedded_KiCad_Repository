@@ -1,6 +1,13 @@
 # Build output
 /output/
 
+# KiCad temp/backup files
+*.lck
+*.kicad_prl
+*-backups/
+.history/
+fp-info-cache
+
 # Python
 __pycache__/
 *.py[cod]

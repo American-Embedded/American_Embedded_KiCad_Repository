@@ -1,0 +1,26 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "American Embedded Library",
+    "description": "Symbols and footprints for common components used in American Embedded designs",
+    "description_full": "A curated library of KiCad symbols and footprints maintained by American Embedded. Includes USB connectors, common ICs, and custom components with consistent styling and verified footprints generated from parametric YAML configurations.",
+    "identifier": "com.github.american-embedded.library",
+    "type": "library",
+    "author": {
+        "name": "American Embedded",
+        "contact": {
+            "email": "build@amemb.com",
+            "github": "https://github.com/American-Embedded"
+        }
+    },
+    "license": "CC-BY-4.0",
+    "resources": {
+        "homepage": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository"
+    },
+    "versions": [
+        {
+            "version": "0.1.0",
+            "status": "development",
+            "kicad_version": "8.0"
+        }
+    ]
+}

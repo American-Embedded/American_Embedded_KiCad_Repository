@@ -127,6 +127,108 @@ python scripts/build_repository.py \
 # Output files will be in output/
 ```
 
+## Footprint Generation
+
+Footprints are generated using [kicad-footprint-generator](https://gitlab.com/kicad/libraries/kicad-footprint-generator) with YAML configuration files.
+
+### Workflow
+
+1. Create/edit a YAML config in `kicad-footprint-generator/data/<generator>/`
+2. Run the generator locally
+3. Commit **both** the YAML config and the generated `.kicad_mod` files
+
+This ensures footprints are reproducible from config while also being available directly in the library.
+
+### YAML File Location
+
+**Important:** YAML configs must be placed in the generator's data directory:
+
+```
+kicad-footprint-generator/data/<generator-name>/your-config.yaml
+```
+
+For example, for the generic connector generator:
+```
+kicad-footprint-generator/data/connector/generator/american-embedded-connectors.yaml
+```
+
+### Running the Generator
+
+```bash
+# First time setup
+cd kicad-footprint-generator
+pip install -r requirements.txt
+
+# List available generators
+python -m generators.generate -l -f .
+
+# Run connector/generator, output to our library
+python -m generators.generate \
+  -g connector/generator \
+  -f ../packages/library/american-embedded-library/footprints/AmericanEmbedded.pretty
+
+# Filter to specific YAML file (by filename without path)
+python -m generators.generate \
+  -g connector/generator \
+  -c american-embedded-connectors \
+  -f ../packages/library/american-embedded-library/footprints/AmericanEmbedded.pretty
+
+# Filter to specific part name pattern within YAML
+python -m generators.generate \
+  -g connector/generator \
+  -c american-embedded-connectors \
+  -p "USB-C*" \
+  -f ../packages/library/american-embedded-library/footprints/AmericanEmbedded.pretty
+```
+
+### CLI Arguments
+
+| Flag | Description |
+|------|-------------|
+| `-g` | Generator name (e.g., `connector/generator`, `package/gullwing`) |
+| `-f` | Output directory for footprints |
+| `-m` | Output directory for 3D models |
+| `-c` | Category/YAML filename filter (glob pattern) |
+| `-p` | Part name filter (glob pattern) |
+| `-l` | List available generators |
+| `-v` | Verbose output |
+
+### YAML Config Format
+
+Configs use the [generic connector generator format](https://gitlab.com/groups/kicad/libraries/-/wikis/Footprint-Generators/Generic-connector-generator). Basic example:
+
+```yaml
+defaults:
+  library: 'AmericanEmbedded'
+  pad_pitch: 0.5
+  description: 'Custom connector'
+  tags: 'connector smd'
+
+MyConnector-{num_pins:d}:
+  inherit: 'defaults'
+  positions: [4, 6, 8, 10]      # Generates 4 variants
+  row_pitch: 2.0
+  pads:
+    size:
+      x: 0.3
+      y: 0.8
+  body_size:
+    x: 5.0
+    y: 3.0
+  first_pin:
+    position: 'top-left'
+    marker:
+      shape: 'triangle'
+      size: 0.5
+```
+
+Key features:
+- **Inheritance**: Use `inherit` to share common settings
+- **Parameterization**: `{num_pins:d}` generates variants for each position count
+- **Expressions**: `$(num_pos*2)` for calculated values
+
+See the [KiCad Libraries Wiki](https://gitlab.com/groups/kicad/libraries/-/wikis/Footprint-Generators) for full documentation.
+
 ## Supported Package Types
 
 | Type | Description |
