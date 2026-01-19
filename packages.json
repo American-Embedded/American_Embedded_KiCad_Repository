@@ -23,10 +23,10 @@
           "version": "0.1.0",
           "status": "development",
           "kicad_version": "8.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.library-0.1.0.zip",
-          "download_sha256": "156395eff371da2fce44525c02eeb6e7892dbf1d9ff3e9bed20bce530f02d397",
-          "download_size": 904957,
-          "install_size": 4973078
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v5/com.github.american-embedded.library-0.1.0.zip",
+          "download_sha256": "d6f415693041bca2d228f72ccf796d383ac8e244938fdada9f70ad66353d80a8",
+          "download_size": 24513,
+          "install_size": 134346
         }
       ]
     },
@@ -53,8 +53,8 @@
           "version": "1.0.0",
           "status": "stable",
           "kicad_version": "9.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.americanembedded.via-stitcher-1.0.0.zip",
-          "download_sha256": "6a7c533cec9aec55325b58b4cac0dcf2c96c51eaa067dfab21168bc2d1263c09",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v5/com.americanembedded.via-stitcher-1.0.0.zip",
+          "download_sha256": "aee151e52ab1ce4a55c8e5f345d9fa0560f6d4901bfefc622edcc4edb5a2c9ea",
           "download_size": 32687,
           "install_size": 95656
         }
@@ -83,8 +83,8 @@
           "version": "1.0.0",
           "status": "stable",
           "kicad_version": "8.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-dark-1.0.0.zip",
-          "download_sha256": "143277a86bc992926b26bcb83378232e66c00811ca0da483a574e4517fafb384",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v5/com.github.american-embedded.theme-dark-1.0.0.zip",
+          "download_sha256": "ff85ddb503591ae8e9953da4af1a93da8586f559dcacfba0c0d84cc4c7cefb3e",
           "download_size": 3793,
           "install_size": 15767
         }
@@ -113,8 +113,8 @@
           "version": "1.0.0",
           "status": "stable",
           "kicad_version": "8.0",
-          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-light-1.0.0.zip",
-          "download_sha256": "9ad5452f327e6d1a22a981c3bbef2db97b53b272733f8496c4dc5055dacea16a",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v5/com.github.american-embedded.theme-light-1.0.0.zip",
+          "download_sha256": "b71b44f904a9dc3827dd8884c0125465ceb483bdadac65980033d4fb2db265f7",
           "download_size": 3780,
           "install_size": 15494
         }
