@@ -1,0 +1,25 @@
+{
+    "$schema": "https://go.kicad.org/api/schemas/v1",
+    "identifier": "com.americanembedded.via-stitcher",
+    "name": "Via Stitcher",
+    "description": "Automated via stitching for copper zones",
+    "runtime": {
+        "type": "python",
+        "min_version": "3.9"
+    },
+    "actions": [
+        {
+            "identifier": "stitch-vias",
+            "name": "Stitch Vias",
+            "description": "Add via stitching to zones",
+            "show-button": true,
+            "scopes": [
+                "pcb"
+            ],
+            "entrypoint": "via_stitcher.py",
+            "icons-light": [
+                "icon.png"
+            ]
+        }
+    ]
+}

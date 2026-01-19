@@ -1,0 +1,26 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "Via Stitcher",
+    "description": "Automated via stitching and trace fencing for KiCad",
+    "description_full": "A powerful via stitching plugin for KiCad with Altium-style features:\n\n- Zone Fill Mode: Fill copper zones with a grid pattern of vias\n- Zone Fence Mode: Place vias around zone perimeters\n- Trace Fence Mode: Shield selected traces with parallel via fences\n\nFeatures:\n- Configurable via size, spacing, and clearances\n- Staggered or grid patterns with optional random offset\n- Path-based trace fencing with smooth corner handling\n- Collision detection with pads, tracks, vias, and rule areas\n- Support for rounded rectangle board outlines\n- Auto-preview with real-time feedback",
+    "identifier": "com.americanembedded.via-stitcher",
+    "type": "plugin",
+    "author": {
+        "name": "American Embedded",
+        "contact": {
+            "email": "build@amemb.com",
+            "github": "https://github.com/American-Embedded"
+        }
+    },
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/American-Embedded/Via-Stitcher"
+    },
+    "versions": [
+        {
+            "version": "1.0.0",
+            "status": "stable",
+            "kicad_version": "9.0"
+        }
+    ]
+}

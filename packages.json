@@ -24,9 +24,39 @@
           "status": "development",
           "kicad_version": "8.0",
           "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.library-0.1.0.zip",
-          "download_sha256": "8aaa915aafe255bde5f38d78b72d6ce0983e1c5c709e34ba59fd267a3a9c6999",
-          "download_size": 14290,
-          "install_size": 68941
+          "download_sha256": "156395eff371da2fce44525c02eeb6e7892dbf1d9ff3e9bed20bce530f02d397",
+          "download_size": 904957,
+          "install_size": 4973078
+        }
+      ]
+    },
+    {
+      "$schema": "https://go.kicad.org/pcm/schemas/v1",
+      "name": "Via Stitcher",
+      "description": "Automated via stitching and trace fencing for KiCad",
+      "description_full": "A powerful via stitching plugin for KiCad with Altium-style features:\n\n- Zone Fill Mode: Fill copper zones with a grid pattern of vias\n- Zone Fence Mode: Place vias around zone perimeters\n- Trace Fence Mode: Shield selected traces with parallel via fences\n\nFeatures:\n- Configurable via size, spacing, and clearances\n- Staggered or grid patterns with optional random offset\n- Path-based trace fencing with smooth corner handling\n- Collision detection with pads, tracks, vias, and rule areas\n- Support for rounded rectangle board outlines\n- Auto-preview with real-time feedback",
+      "identifier": "com.americanembedded.via-stitcher",
+      "type": "plugin",
+      "author": {
+        "name": "American Embedded",
+        "contact": {
+          "email": "build@amemb.com",
+          "github": "https://github.com/American-Embedded"
+        }
+      },
+      "license": "MIT",
+      "resources": {
+        "homepage": "https://github.com/American-Embedded/Via-Stitcher"
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "status": "stable",
+          "kicad_version": "9.0",
+          "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.americanembedded.via-stitcher-1.0.0.zip",
+          "download_sha256": "6a7c533cec9aec55325b58b4cac0dcf2c96c51eaa067dfab21168bc2d1263c09",
+          "download_size": 32687,
+          "install_size": 95656
         }
       ]
     },
@@ -54,7 +84,7 @@
           "status": "stable",
           "kicad_version": "8.0",
           "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-dark-1.0.0.zip",
-          "download_sha256": "a7641257347fd2b5e9dc56579194165074767abde2c4e6649d38cc25e1c34045",
+          "download_sha256": "143277a86bc992926b26bcb83378232e66c00811ca0da483a574e4517fafb384",
           "download_size": 3793,
           "install_size": 15767
         }
@@ -84,7 +114,7 @@
           "status": "stable",
           "kicad_version": "8.0",
           "download_url": "https://github.com/American-Embedded/American_Embedded_KiCad_Repository/releases/download/v4/com.github.american-embedded.theme-light-1.0.0.zip",
-          "download_sha256": "d82c487a01ff809d1b722a367769a82335c9191d9ccf86c6c89cc2ffd114fef9",
+          "download_sha256": "9ad5452f327e6d1a22a981c3bbef2db97b53b272733f8496c4dc5055dacea16a",
           "download_size": 3780,
           "install_size": 15494
         }
